@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yuvasri S — Computer Science & Engineering</title>
+<meta name="description" content="Portfolio of Yuvasri S, Computer Science & Engineering student. Software development, web development, AI-assisted projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bgGrid" aria-hidden="true"></canvas>
+
+<a class="skip-link" href="#home">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-logo mono" href="#home" aria-label="Home">YS<span class="accent">.</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#objective" data-nav>Objective</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#education" data-nav>Education</a>
+      <a href="#activities" data-nav>Beyond Code</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+
+    <a class="nav-cta" href="#contact">Get in touch</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <canvas id="radarCanvas" class="radar-canvas" aria-hidden="true"></canvas>
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <p class="hero-meta mono">
+        <span class="status-dot"></span>SYS.STATUS <span class="accent">ONLINE</span>
+        <span class="sep">·</span>LAT 10.79°N
+        <span class="sep">·</span>LON 78.70°E
+        <span class="sep">·</span>TIRUCHIRAPPALLI, TN
+      </p>
+
+      <h1 class="hero-name">
+        <span class="name-line">YUVASRI</span><span class="name-line accent">.S</span>
+      </h1>
+
+      <p class="hero-role mono"><span id="typedRole"></span><span class="caret" aria-hidden="true">_</span></p>
+
+      <p class="hero-sub">B.E. Computer Science &amp; Engineering &nbsp;·&nbsp; Class of 2027</p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View work</a>
+        <a href="resume.pdf" class="btn btn-ghost" download>Download résumé</a>
+        <a href="#contact" class="btn btn-ghost">Contact</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll mono" aria-hidden="true">SCROLL<span class="arrow">↓</span></div>
+  </section>
+
+  <!-- ============ OBJECTIVE ============ -->
+  <section class="section" id="objective">
+    <div class="section-inner reveal">
+      <p class="eyebrow mono">// transmission log_01</p>
+      <h2 class="section-title">Objective</h2>
+      <p class="objective-text">
+        Computer Science &amp; Engineering student (2023&ndash;2027) building a practical foundation in
+        software and web development. Looking for a technical role to apply classroom knowledge to
+        real problems, contribute to a team's codebase, and grow quickly through hands-on work.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <p class="eyebrow mono reveal">// system capabilities</p>
+      <h2 class="section-title reveal">Skills</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-panel reveal">
+          <div class="skill-head">
+            <span class="skill-label mono">LANGUAGES</span>
+            <span class="skill-readout mono">02 ACTIVE</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="78"></div></div>
+          <div class="chip-row">
+            <span class="chip">Java</span>
+            <span class="chip">Python</span>
+          </div>
+        </div>
+
+        <div class="skill-panel reveal">
+          <div class="skill-head">
+            <span class="skill-label mono">WEB</span>
+            <span class="skill-readout mono">03 ACTIVE</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="70"></div></div>
+          <div class="chip-row">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-panel reveal">
+          <div class="skill-head">
+            <span class="skill-label mono">DATABASE</span>
+            <span class="skill-readout mono">01 ACTIVE</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="55"></div></div>
+          <div class="chip-row">
+            <span class="chip">MySQL</span>
+          </div>
+        </div>
+
+        <div class="skill-panel reveal">
+          <div class="skill-head">
+            <span class="skill-label mono">TOOLING</span>
+            <span class="skill-readout mono">01 ACTIVE</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="60"></div></div>
+          <div class="chip-row">
+            <span class="chip">VS Code</span>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="skills-note mono reveal">focus areas — software development · web application development · logical problem solving</p>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <p class="eyebrow mono reveal">// mission log</p>
+      <h2 class="section-title reveal">Projects</h2>
+
+      <!-- Featured project (original) -->
+      <article class="project-feature reveal">
+        <div class="project-visual">
+          <canvas id="scanCanvas"></canvas>
+          <div class="project-visual-frame">
+            <span class="frame-tag mono">SCAN_01</span>
+            <span class="frame-tag mono">FOREST.GRID</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <p class="project-tag mono">SATELLITE IMAGERY · AI/ML CONCEPT</p>
+          <h3>AI-Based Deforestation Detection</h3>
+          <p>
+            A concept system that scans satellite imagery over time to flag areas of forest-cover
+            loss, aimed at giving conservation teams an early signal instead of a manual survey.
+          </p>
+          <ul class="project-role">
+            <li><span class="role-tag mono">ROLE</span> Built the presentation deck explaining the system end-to-end</li>
+            <li><span class="role-tag mono">ROLE</span> Monitored model logic and outputs during testing</li>
+          </ul>
+          <div class="chip-row" style="margin-top:14px">
+            <span class="chip">AI / Computer Vision</span>
+            <span class="chip">Satellite Imagery</span>
+            <span class="chip">Team Project</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project card grid -->
+      <div class="project-cards-grid">
+
+        <!-- Women's Health Assistant -->
+        <article class="proj-card reveal">
+          <div class="proj-card-header">
+            <span class="proj-icon" aria-hidden="true">⬡</span>
+            <span class="proj-domain mono">HEALTHCARE · WEB APP</span>
+          </div>
+          <h3>Women's Health Assistant</h3>
+          <p>A full-stack health companion that gives women visibility over their cycle, health patterns, and symptoms — all in one place.</p>
+          <ul class="proj-features">
+            <li><span class="feat-dot" aria-hidden="true"></span>Period tracking</li>
+            <li><span class="feat-dot" aria-hidden="true"></span>Cycle predictions</li>
+            <li><span class="feat-dot" aria-hidden="true"></span>Health insights</li>
+            <li><span class="feat-dot" aria-hidden="true"></span>Symptom logging</li>
+          </ul>
+          <div class="chip-row">
+            <span class="chip">Python</span><span class="chip">Flask</span><span class="chip">HTML/CSS/JS</span>
+          </div>
+        </article>
+
+        <!-- Career GPS -->
+        <article class="proj-card reveal">
+          <div class="proj-card-header">
+            <span class="proj-icon" aria-hidden="true">⬡</span>
+            <span class="proj-domain mono">AI / NLP · CAREER TECH</span>
+          </div>
+          <h3>Career GPS — AI Career Readiness Mentor</h3>
+          <p>An AI-powered web app that analyzes a student's skills, maps them to career roles (Data Scientist, AI Engineer, Full Stack Developer, DevOps, and more), calculates a readiness score, and generates a step-by-step learning roadmap.</p>
+          <p style="margin-top:8px">Includes a <strong style="color:var(--cyan)">"What-If Simulation Engine"</strong> — users can test how adding skills, taking breaks, or switching paths affects their growth timeline before committing to a decision.</p>
+          <div class="chip-row">
+            <span class="chip">ML</span><span class="chip">NLP</span><span class="chip">Python</span><span class="chip">Interactive Dashboards</span>
+          </div>
+        </article>
+
+        <!-- Fake Job Posting Detection -->
+        <article class="proj-card reveal">
+          <div class="proj-card-header">
+            <span class="proj-icon" aria-hidden="true">⬡</span>
+            <span class="proj-domain mono">CYBERSECURITY · MACHINE LEARNING</span>
+          </div>
+          <h3>Fake Job Posting Detection Platform</h3>
+          <p>Detects fraudulent job advertisements and recruitment scams before they reach job seekers, using ML classification on posting content and company metadata.</p>
+          <ul class="proj-features">
+            <li><span class="feat-dot" aria-hidden="true"></span>Company verification</li>
+            <li><span class="feat-dot" aria-hidden="true"></span>Fraud score</li>
+            <li><span class="feat-dot" aria-hidden="true"></span>Risk analysis</li>
+            <li><span class="feat-dot" aria-hidden="true"></span>Scam reporting</li>
+          </ul>
+          <div class="chip-row">
+            <span class="chip">Machine Learning</span><span class="chip">Python</span><span class="chip">Cybersecurity</span>
+          </div>
+        </article>
+
+        <!-- Intelligent Resource Allocation -->
+        <article class="proj-card reveal">
+          <div class="proj-card-header">
+            <span class="proj-icon" aria-hidden="true">⬡</span>
+            <span class="proj-domain mono">AI · WORKFORCE MANAGEMENT</span>
+          </div>
+          <h3>Intelligent Resource Allocation System</h3>
+          <p>A Flask-based web application that uses an AI-driven recommendation engine to optimally match employees to projects within an organization — scoring fit based on skills, availability, and project requirements.</p>
+          <ul class="proj-features">
+            <li><span class="feat-dot" aria-hidden="true"></span>Employee–project fit scoring</li>
+            <li><span class="feat-dot" aria-hidden="true"></span>AI-driven matching engine</li>
+            <li><span class="feat-dot" aria-hidden="true"></span>Workforce optimization dashboard</li>
+          </ul>
+          <div class="chip-row">
+            <span class="chip">Flask</span><span class="chip">Python</span><span class="chip">AI Matching</span><span class="chip">Web App</span>
+          </div>
+        </article>
+
+      </div><!-- /project-cards-grid -->
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section section-alt" id="education">
+    <div class="section-inner">
+      <p class="eyebrow mono reveal">// orbital path</p>
+      <h2 class="section-title reveal">Education</h2>
+
+      <div class="timeline reveal">
+        <div class="timeline-track" aria-hidden="true"></div>
+        <div class="timeline-item">
+          <span class="timeline-year mono">2023 — 2027</span>
+          <div class="timeline-card">
+            <h3>B.E. Computer Science &amp; Engineering</h3>
+            <p class="timeline-place">Sowdambikaa Matriculation Higher Secondary School · Thottiyam</p>
+            <p class="timeline-note mono">HSC SCORE: 83.50%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACTIVITIES ============ -->
+  <section class="section" id="activities">
+    <div class="section-inner">
+      <p class="eyebrow mono reveal">// off duty</p>
+      <h2 class="section-title reveal">Beyond the Code</h2>
+
+      <div class="activities-grid">
+        <div class="activity-card reveal">
+          <span class="activity-icon" aria-hidden="true">◆</span>
+          <h3>Dance</h3>
+          <p>Performs and competes outside the classroom — a creative outlet alongside engineering.</p>
+        </div>
+        <div class="activity-card reveal">
+          <span class="activity-icon" aria-hidden="true">◆</span>
+          <h3>Fitness</h3>
+          <p>Keeps an active routine — discipline that carries over into consistent, focused work.</p>
+        </div>
+        <div class="activity-card reveal">
+          <span class="activity-icon" aria-hidden="true">◆</span>
+          <h3>Campus Involvement</h3>
+          <p>Annual day events, group discussions, presentations, and seminars on emerging tech topics.</p>
+        </div>
+        <div class="activity-card reveal">
+          <span class="activity-icon" aria-hidden="true">◆</span>
+          <h3>Paper Presentation</h3>
+          <p>Participates in co-curricular paper presentations and technical seminars.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATES + LANGUAGES ============ -->
+  <section class="section section-alt" id="certificates">
+    <div class="section-inner">
+      <p class="eyebrow mono reveal">// data log</p>
+      <h2 class="section-title reveal">Certificates &amp; Languages</h2>
+
+      <div class="data-grid">
+        <div class="data-panel reveal">
+          <span class="skill-label mono">CERTIFICATES</span>
+          <ul class="data-list">
+            <li>Value-added course — Django</li>
+            <li>Value-added course — Java basics</li>
+            <li>Technical seminars &amp; workshops — participant</li>
+            <li>Typing certificate — Junior level, with distinction</li>
+          </ul>
+        </div>
+        <div class="data-panel reveal">
+          <span class="skill-label mono">LANGUAGES</span>
+          <div class="chip-row">
+            <span class="chip">Tamil</span>
+            <span class="chip">English</span>
+            <span class="chip">Japanese · Basic</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="section-inner contact-inner reveal">
+      <p class="eyebrow mono">// open channel</p>
+      <h2 class="section-title">Let's talk</h2>
+      <p class="contact-sub">Open to internships and entry-level software &amp; web development roles.</p>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:yuvasriselvan25@gmail.com">
+          <span class="contact-label mono">EMAIL</span>
+          <span class="contact-value">yuvasriselvan25@gmail.com</span>
+        </a>
+        <a class="contact-card" href="tel:+919952776159">
+          <span class="contact-label mono">PHONE</span>
+          <span class="contact-value">+91 99527 76159</span>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/yuvasri-s-579860325" target="_blank" rel="noopener">
+          <span class="contact-label mono">LINKEDIN</span>
+          <span class="contact-value">/in/yuvasri-s-579860325</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer mono">
+  <p>© 2026 Yuvasri S. — Built with HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
